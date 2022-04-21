@@ -19,8 +19,8 @@ body{
     flex: 1 1 auto;
     height: 100vh;
     background-image: url("./images/casey-horner-0D8_tYHIy0o-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -31,27 +31,33 @@ body{
     width: 50vw;
 }
 
+
 .header{
     background-color:antiquewhite;
-    height: 10vh;
+    height: 20vh;
 }
 
 .content{
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
 }
 
 .content-container{
     background-color: gainsboro;
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 auto;
 }
+
 .content-container-input{
     background-color: gainsboro;
+    height: 20px;
+    width: 350px;
+    padding: 0px 10px 0px 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 input[type="text"], input[type="email"], input[type="tel"] input[type="password"]{
@@ -65,12 +71,13 @@ input[type="text"], input[type="email"], input[type="tel"] input[type="password"
     height: 20vh;
 }
 
+/*
 div{
     padding: 1px;
-    /* background-color:aquamarine; */
     display: flex;
     flex: 1 1 auto;
 }
+*/
 
 h1{
     color: red;

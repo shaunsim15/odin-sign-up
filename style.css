@@ -17,10 +17,20 @@ body{
 .background{
     display: flex;
     flex: 1 1 auto;
+    flex-direction: row;
     height: 100vh;
     background-image: url("./images/casey-horner-0D8_tYHIy0o-unsplash.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.background-logoBacking{
+    background-color: rgba(255,255,255,0.7);
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    top: 30vh;
 }
 
 

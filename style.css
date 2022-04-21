@@ -11,6 +11,7 @@
 body{
     font-family:shaun-font-1, shaun-font-2, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
+    box-sizing: border-box;
 }
 
 .background{
@@ -27,20 +28,41 @@ body{
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    width: 50vw;
 }
 
 .header{
     background-color:antiquewhite;
+    height: 10vh;
 }
 
 .content{
     background-color: gainsboro;
     display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.content-container{
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-container-input{
+    background-color: gainsboro;
+    display: flex;
     flex-wrap: wrap;
 }
 
+input[type="text"], input[type="email"], input[type="tel"] input[type="password"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
 .footer{
     background-color: aquamarine;
+    height: 20vh;
 }
 
 div{

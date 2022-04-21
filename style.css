@@ -1,0 +1,55 @@
+@font-face {
+    font-family:shaun-font-1;
+    src: url('./fonts/raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family:shaun-font-2;
+    src: url('./fonts/amatic/AmaticSC-Regular.ttf');
+}
+
+body{
+    font-family:shaun-font-1, shaun-font-2, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+}
+
+.background{
+    display: flex;
+    flex: 1 1 auto;
+    height: 100vh;
+    background-image: url("./images/casey-horner-0D8_tYHIy0o-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.main{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.header{
+    background-color:antiquewhite;
+}
+
+.content{
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: aquamarine;
+}
+
+div{
+    padding: 1px;
+    /* background-color:aquamarine; */
+    display: flex;
+    flex: 1 1 auto;
+}
+
+h1{
+    color: red;
+}

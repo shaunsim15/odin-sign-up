@@ -106,6 +106,10 @@ input:valid.displayPseudoState{
     border: 2px solid rgb(50, 204, 50);
 }
 
+input:valid.confirmationError{
+    border: 2px solid red;
+}
+
 input:focus.displayPseudoState{
     border: 2px solid black;
     box-shadow: 1px 1px 5px;
@@ -143,6 +147,18 @@ input#password.displayPseudoState:invalid + span::after{
 
 input#confirm-password.displayPseudoState:invalid + span::after{
     content:"Please enter a valid password";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#confirm-password.confirmationError:valid + span::after{
+    content:"Please ensure passwords match";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#confirm-password.confirmationError:invalid + span::after{
+    content:"Please ensure passwords match";
     color: red;
     font-size: 0.8rem;
 }

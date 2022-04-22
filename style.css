@@ -111,6 +111,41 @@ input:focus.displayPseudoState{
     box-shadow: 1px 1px 5px;
 }
 
+input#firstName.displayPseudoState:invalid + span::after{
+    content:"Please enter a first name";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#lastName.displayPseudoState:invalid + span::after{
+    content:"Please enter a last name";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#email.displayPseudoState:invalid + span::after{
+    content:"Please enter a valid email e.g. bob@gmail.com";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#tel.displayPseudoState:invalid + span::after{
+    content:"Please enter a telephone number";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#password.displayPseudoState:invalid + span::after{
+    content:"Please enter a valid password";
+    color: red;
+    font-size: 0.8rem;
+}
+
+input#confirm-password.displayPseudoState:invalid + span::after{
+    content:"Please enter a valid password";
+    color: red;
+    font-size: 0.8rem;
+}
 
 .footer{
     background-color: rgba(103, 176, 67, 0.7);

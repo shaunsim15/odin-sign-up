@@ -5,9 +5,11 @@ function triggersAfterInteraction(e){
 function checkPasswords(e){
     if (password.value === confirmPassword.value){
         confirmPassword.classList.remove('confirmationError');
+        confirmPassword.setCustomValidity('');
     }
     else{
         confirmPassword.classList.add('confirmationError');
+        confirmPassword.setCustomValidity('Make sure passwords match!');
     }
 }
 
@@ -21,4 +23,4 @@ for (let element of inputElements){
 }
 
 password.addEventListener('change',checkPasswords);
-confirmPassword.addEventListener('change',checkPasswords);
+confirmPassword.addEventListener('keyup',checkPasswords);

@@ -111,7 +111,7 @@ input:valid.confirmationError{
 }
 
 input:focus.displayPseudoState{
-    border: 2px solid black;
+    border: 3px solid black;
     box-shadow: 1px 1px 5px;
 }
 
